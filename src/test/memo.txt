@@ -1,0 +1,118 @@
+
+**execution time of each strategy to make a first move**
+        IterativeDeepening                      :0.00742126256227
+        MCTS(DEPTH=2,PLAYOUT=100)               :0.38263747769,0.409906126204 
+        MCTS(DEPTH=3,PLAYOUT=50)                :0.498531182607,0.431931829453
+        MCTS(RANDOM PLAYOUT, PLAYOUT=1700)      :0.533832423827
+        MCTS(DEPTH=3,PLAYOUT=50)                :0.655818015337
+
+
+**Strength Test result**
+        MCTS(RANDOM) <(weak) Iterative Deepening << MCTS(MORE PLAYOUT) = MCTS(DEEPER
+        SEARCH)
+
+        IterativeDeepening VS MCTS(DEPTH=2,PLAYOUT=100)
+        IterativeDeepening  win against MCTS(DEPTH=2,PLAYOUT=100) : 1
+        IterativeDeepening lose against MCTS(DEPTH=2,PLAYOUT=100) : 6
+        IterativeDeepening draw against MCTS(DEPTH=2,PLAYOUT=100) : 3
+
+        IterativeDeepening VS MCTS(DEPTH=3,PLAYOUT=50)
+        IterativeDeepening  win against MCTS(DEPTH=3,PLAYOUT=50) : 2
+        IterativeDeepening lose against MCTS(DEPTH=3,PLAYOUT=50) : 6
+        IterativeDeepening draw against MCTS(DEPTH=3,PLAYOUT=50) : 2
+
+        IterativeDeepening VS MCTS(RANDOM PLAYOUT, PLAYOUT=1700)
+        IterativeDeepening  win against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 7
+        IterativeDeepening lose against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 3
+        IterativeDeepening draw against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 0
+
+        MCTS(DEPTH=1,PLAYOUT=250) VS MCTS(DEPTH=2,PLAYOUT=100)
+        MCTS(DEPTH=1,PLAYOUT=250)  win against MCTS(DEPTH=2,PLAYOUT=100) : 1
+        MCTS(DEPTH=1,PLAYOUT=250) lose against MCTS(DEPTH=2,PLAYOUT=100) : 7
+        MCTS(DEPTH=1,PLAYOUT=250) draw against MCTS(DEPTH=2,PLAYOUT=100) : 2
+
+        MCTS(DEPTH=2,PLAYOUT=100) VS MCTS(DEPTH=3,PLAYOUT=50)
+        MCTS(DEPTH=2,PLAYOUT=100)  win against MCTS(DEPTH=3,PLAYOUT=50) : 5
+        MCTS(DEPTH=2,PLAYOUT=100) lose against MCTS(DEPTH=3,PLAYOUT=50) : 4
+        MCTS(DEPTH=2,PLAYOUT=100) draw against MCTS(DEPTH=3,PLAYOUT=50) : 1
+
+        MCTS(DEPTH=2,PLAYOUT=100) VS MCTS(DEPTH=4,PLAYOUT=13)
+        MCTS(DEPTH=2,PLAYOUT=100)  win against MCTS(DEPTH=4,PLAYOUT=13) : 7
+        MCTS(DEPTH=2,PLAYOUT=100) lose against MCTS(DEPTH=4,PLAYOUT=13) : 2
+        MCTS(DEPTH=2,PLAYOUT=100) draw against MCTS(DEPTH=4,PLAYOUT=13) : 1
+
+        MCTS(DEPTH=2,PLAYOUT=100) VS MCTS(RANDOM PLAYOUT, PLAYOUT=1700)
+        MCTS(DEPTH=2,PLAYOUT=100)  win against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 9
+        MCTS(DEPTH=2,PLAYOUT=100) lose against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 1
+        MCTS(DEPTH=2,PLAYOUT=100) draw against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 0
+
+
+        MCTS(DEPTH=3,PLAYOUT=50) VS MCTS(RANDOM PLAYOUT, PLAYOUT=1700)
+        MCTS  win against MCTS(DEPTH=3,PLAYOUT=50)(RANDOM PLAYOUT, PLAYOUT=1700) : 8
+        MCTS lose against MCTS(DEPTH=3,PLAYOUT=50)(RANDOM PLAYOUT, PLAYOUT=1700) : 2
+        MCTS draw against MCTS(DEPTH=3,PLAYOUT=50)(RANDOM PLAYOUT, PLAYOUT=1700) : 0
+
+        IterativeDeepening VS MCTS(RANDOM PLAYOUT, PLAYOUT=1700)
+        IterativeDeepening  win against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 4
+        IterativeDeepening lose against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 6
+        IterativeDeepening draw against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 0
+
+        MCTS(DEPTH=2,PLAYOUT=100) VS MCTS(DEPTH=3,PLAYOUT=50)
+        MCTS(DEPTH=2,PLAYOUT=100)  win against MCTS(DEPTH=3,PLAYOUT=50) : 3
+        MCTS(DEPTH=2,PLAYOUT=100) lose against MCTS(DEPTH=3,PLAYOUT=50) : 7
+        MCTS(DEPTH=2,PLAYOUT=100) draw against MCTS(DEPTH=3,PLAYOUT=50) : 0
+
+        MCTS(DEPTH=2,PLAYOUT=100) VS MCTS(RANDOM PLAYOUT, PLAYOUT=1700)
+        MCTS(DEPTH=2,PLAYOUT=100)  win against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 9
+        MCTS(DEPTH=2,PLAYOUT=100) lose against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 1
+        MCTS(DEPTH=2,PLAYOUT=100) draw against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 0
+
+        RE-TEST
+        MCTS(DEPTH=2,PLAYOUT=100) VS MCTS(DEPTH=3,PLAYOUT=50)
+        MCTS(DEPTH=2,PLAYOUT=100)  win against MCTS(DEPTH=3,PLAYOUT=50) : 9
+        MCTS(DEPTH=2,PLAYOUT=100) lose against MCTS(DEPTH=3,PLAYOUT=50) : 9
+        MCTS(DEPTH=2,PLAYOUT=100) draw against MCTS(DEPTH=3,PLAYOUT=50) : 2
+
+**ADDED HEURISTIC**
+        IterativeDeepening with Heuristic >>> .. without Heuristic
+        Kota-no-MacBook-Air:test kota$ python strength_test.py 
+
+        IterativeDeepening with Heuristic VS IterativeDeepening without Heuristic
+        IterativeDeepening with Heuristic  win against IterativeDeepening without Heuristic : 20
+        IterativeDeepening with Heuristic lose against IterativeDeepening without Heuristic : 0
+        IterativeDeepening with Heuristic draw against IterativeDeepening without Heuristic : 0
+
+        Kota-no-MacBook-Air:test kota$ python strength_test.py 
+
+        IterativeDeepening with Heuristic VS IterativeDeepening without Heuristic
+        IterativeDeepening with Heuristic  win against IterativeDeepening without Heuristic : 20
+        IterativeDeepening with Heuristic lose against IterativeDeepening without Heuristic : 0
+        IterativeDeepening with Heuristic draw against IterativeDeepening without Heuristic : 0
+
+IterativeDeepening VS IterativeDeepening
+IterativeDeepening  win against IterativeDeepening : 10
+IterativeDeepening lose against IterativeDeepening : 0
+IterativeDeepening draw against IterativeDeepening : 0
+
+
+IterativeDeepening VS MCTS(DEPTH=2,PLAYOUT=100)
+IterativeDeepening  win against MCTS(DEPTH=2,PLAYOUT=100) : 6
+IterativeDeepening lose against MCTS(DEPTH=2,PLAYOUT=100) : 2
+IterativeDeepening draw against MCTS(DEPTH=2,PLAYOUT=100) : 2
+
+
+IterativeDeepening VS MCTS(DEPTH=3,PLAYOUT=50)
+IterativeDeepening  win against MCTS(DEPTH=3,PLAYOUT=50) : 8
+IterativeDeepening lose against MCTS(DEPTH=3,PLAYOUT=50) : 1
+IterativeDeepening draw against MCTS(DEPTH=3,PLAYOUT=50) : 1
+
+
+IterativeDeepening VS MCTS(RANDOM PLAYOUT, PLAYOUT=1700)
+IterativeDeepening  win against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 10
+IterativeDeepening lose against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 0
+IterativeDeepening draw against MCTS(RANDOM PLAYOUT, PLAYOUT=1700) : 0
+
+IterativeDeepening with Heuristics VS MCTS with Heuristic(DEPTH=3,PLAYOUT=50)
+IterativeDeepening with Heuristics  win against MCTS(DEPTH=3,PLAYOUT=50) : 4
+IterativeDeepening with Heuristics lose against MCTS(DEPTH=3,PLAYOUT=50) : 5
+IterativeDeepening with Heuristics draw against MCTS(DEPTH=3,PLAYOUT=50) : 1

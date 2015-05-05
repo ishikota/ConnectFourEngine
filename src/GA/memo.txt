@@ -1,0 +1,15 @@
+Content
+1. Main program
+  - execute genetic algorithm.
+  - you should write parameter for your problem in another file. program reads it and start GA process.
+  - parameter format is fomulated.(see below).
+2. Algorithm
+  - you use these 3 basic GA process [selection, crossover,
+    mutation] in main program.
+  - some algorithm needs to be set parameters. What parameter does algorithm
+    needs is written in its head of the file.
+3. Test
+  - test program to check how GA working.
+
+Format
+
