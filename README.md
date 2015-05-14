@@ -59,7 +59,17 @@ Next choose second player and set its strength in the same way.
 
 Start ConnectFour !!
 --------
+
 Current board state will be displayed in each turn.  
+```
+   - - - - X - - 
+   - - - - O - - 
+   - - - - O - - 
+   - - - O X - - 
+   - X - X O - - 
+   - O X O X - - 
+   1 2 3 4 5 6 7 
+```
   
 Each square state is represented by three character.  
   
@@ -68,6 +78,16 @@ Each square state is represented by three character.
 3. - : Empty square  
 
 You make a move by input the number of column you want to make a move (from 1 to 7) !!  
+
+And if you want to finish the game, input 0 as your input like below.
+```
+--- TURN [ FIRSTPLAYER (O) ] ---
+INPUT > 
+0
+> ARE YOU SURE TO QUIT THE GAME? (y/n)
+y
+> FINISH THE GAME
+```
   
 Enjoy ConnectFour !!
 
